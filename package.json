@@ -1,0 +1,22 @@
+{
+  "name": "tsdecorate",
+  "version": "1.0.0",
+  "description": "Typescript library comprised of multiple reusable decorators",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tmarndt1/TsDecorate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tmarndt1/TsDecorate/issues"
+  },
+  "homepage": "https://github.com/Tmarndt1/TsDecorate#readme",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
