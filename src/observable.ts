@@ -9,7 +9,7 @@ export interface ISubscriber {
 }
 
 export function observable() {
-    return function(target: IObservable, propertyKey: string) {
+    return function(target: IObservable, propertyKey: string, descriptor: PropertyDescriptor) {
         let value: any;
 
         const getter = function() {

@@ -1,9 +1,7 @@
 export function confirmable(callback: (onConfirm: () => any) => any) {
-    return function(target: any, propertyKey: string) {
+    return function(target: any, propertyKey: string, descriptor: TypedPropertyDescriptor<Function>) {
         callback(() => {
-            if (target != null && typeof(target[propertyKey]) === "function") {
-                target[propertyKey]();
-            }
+            descriptor.value.call(arguments);
         });
     }
 }
